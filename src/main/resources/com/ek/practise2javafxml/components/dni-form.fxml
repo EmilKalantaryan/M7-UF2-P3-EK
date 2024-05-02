@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ek.practise2javafxml.components.DniFormController">
+    <children>
+        <Label layoutX="24.0" layoutY="18.0" text="First name"/>
+        <TextField fx:id="firstNameField" layoutX="24.0" layoutY="37.0"/>
+        <Label layoutX="24.0" layoutY="77.0" text="Last name"/>
+        <TextField fx:id="lastNameField" layoutX="24.0" layoutY="96.0"/>
+        <Label layoutX="24.0" layoutY="133.0" text="Multiplier"/>
+        <TextField fx:id="multiplierField" layoutX="24.0" layoutY="153.0"/>
+    </children>
+</AnchorPane>

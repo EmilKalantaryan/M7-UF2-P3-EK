@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ek.practise2javafxml.MainController">
+    <VBox fx:id="dniFormContainer" layoutX="88.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <fx:include fx:id="dniFormComponent" source="components/dni-form.fxml"/>
+        </children>
+    </VBox>
+    <Button fx:id="generateDniButton" layoutX="112.0" layoutY="208.0" mnemonicParsing="false" onAction="#generateDni"
+            prefWidth="149.0" text="Generate DNI"/>
+    <Button fx:id="deleteDniButton" layoutX="112.0" layoutY="244.0" mnemonicParsing="false" onAction="#deleteDni"
+            prefWidth="149.0" text="Delete DNI"/>
+    <TextField fx:id="resultField" editable="false" layoutX="112.0" layoutY="338.0"/>
+    <Label layoutX="112.0" layoutY="318.0" text="Result"/>
+    <Text fx:id="feedbackText" fill="#d20000" layoutX="25.0" layoutY="384.0" textAlignment="CENTER"
+          wrappingWidth="323.0"/>
+    <Button fx:id="clearFieldsButton" layoutX="112.0" layoutY="280.0" mnemonicParsing="false" onAction="#clearFields"
+            prefWidth="149.0" text="Clear fields"/>
+</AnchorPane>
